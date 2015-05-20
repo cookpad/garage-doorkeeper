@@ -1,6 +1,8 @@
 # Garage::Doorkeeper
 
-TODO: Write a gem description
+A authenticatino/authorization extension for [Garage gem](https://github.com/cookpad/garage)
+to integrate [Doorkeeper gem](https://github.com/doorkeeper-gem/doorkeeper).
+Garage is a Rails extension for RESTful Hypermedia API.
 
 ## Installation
 

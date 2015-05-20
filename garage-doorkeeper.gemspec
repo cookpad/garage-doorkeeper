@@ -6,8 +6,8 @@ require 'garage/doorkeeper/version'
 Gem::Specification.new do |spec|
   spec.name          = "garage-doorkeeper"
   spec.version       = Garage::Doorkeeper::VERSION
-  spec.authors       = ["Taiki ONO"]
-  spec.email         = ["taiki-ono@cookpad.com"]
+  spec.authors       = ["Taiki Ono"]
+  spec.email         = ["taiks.4559@gmail.com"]
   spec.summary       = %q{Garage extension to integrate doorkeeper gem.}
   spec.description   = spec.summary
   spec.homepage      = ""
