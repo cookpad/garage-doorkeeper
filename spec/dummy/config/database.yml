@@ -11,7 +11,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: garage_dummy_development
+  database: garage_doorkeeper_dummy_development
   pool: 5
   username: root
   password:
@@ -23,7 +23,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: garage_dummy_test
+  database: garage_doorkeeper_dummy_test
   pool: 5
   username: root
   password:
@@ -32,7 +32,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: garage_dummy_production
+  database: garage_doorkeeper_dummy_production
   pool: 5
   username: root
   password:
