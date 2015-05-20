@@ -1,4 +1,5 @@
 # Garage::Doorkeeper
+[![Build Status](https://travis-ci.org/cookpad/garage-doorkeeper.svg)](https://travis-ci.org/cookpad/garage-doorkeeper)
 
 A authenticatino/authorization extension for [Garage gem](https://github.com/cookpad/garage)
 to integrate [Doorkeeper gem](https://github.com/doorkeeper-gem/doorkeeper).
