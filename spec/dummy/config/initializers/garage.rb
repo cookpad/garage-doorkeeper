@@ -1,5 +1,5 @@
 Garage.configure {}
-Garage.configuration.strategy = Garage::Doorkeeper::Strategy
+Garage.configuration.strategy = Garage::Strategy::Doorkeeper
 
 Garage::TokenScope.configure do
   register :public do

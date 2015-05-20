@@ -1,7 +1,7 @@
 module Garage
-  module Doorkeeper
+  module Strategy
     # doorkeeper_token has same interface with Garage::Strategy::AccessToken
-    module Strategy
+    module Doorkeeper
       extend ActiveSupport::Concern
 
       # Garage::ControllerHelper already implements `doorkeeper_token`,
