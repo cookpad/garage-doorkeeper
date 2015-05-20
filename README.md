@@ -4,6 +4,14 @@ A authenticatino/authorization extension for [Garage gem](https://github.com/coo
 to integrate [Doorkeeper gem](https://github.com/doorkeeper-gem/doorkeeper).
 Garage is a Rails extension for RESTful Hypermedia API.
 
+## Doorkeeper compatibility
+- Use garage-doorkeeper v1.x with doorkeeper v1.x.
+- Use garage-doorkeeper v2.x with doorkeeper v2.x.
+
+garage-doorkeeper v1 keeps compatibility with doorkeeper v1.x, actually
+">= 0.6.7" and "< 1.5.0". garage-doorkeeper v2 keeps compatibility with
+doorkeeper v2.x, actually ">= 2.0.0".
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +30,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In `config/initializer/garage.rb`:
+
+```ruby
+Garage.configuration.strategy = Garage::Strategy::Doorkeeper
+
+# Then configure doorkeeper if you didn't.
+Doorkeeper.configure do
+  #...
+end
+```
+
+Then Garage will authenticate/authorize requests using doorkeeper feature.
 
 ## Contributing
 
