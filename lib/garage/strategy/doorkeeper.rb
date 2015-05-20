@@ -4,6 +4,12 @@ module Garage
     module Doorkeeper
       extend ActiveSupport::Concern
 
+      # Garage::ControllerHelper already implements `doorkeeper_token`,
+      # so monkey patch here.
+      ::Doorkeeper::Rails::Helpers.class_eval do
+        alias_method :original_doorkeeper_token, :doorkeeper_token
+      end
+
       included do
         before_action :doorkeeper_authorize!
         alias_method :doorkeeper_unauthorized_render_options, :unauthorized_render_options
