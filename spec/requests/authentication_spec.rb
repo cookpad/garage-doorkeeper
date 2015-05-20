@@ -11,8 +11,7 @@ describe "Authentication" do
         access_token.destroy
       end
 
-      # Move to doorkeeper auth filter test
-      xit "returns 401 with JSON" do
+      it "returns 401 with JSON" do
         should == 401
         response.body.should be_json
       end
