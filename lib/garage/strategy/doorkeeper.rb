@@ -6,14 +6,13 @@ module Garage
 
       # Garage::ControllerHelper already implements `doorkeeper_token`,
       # so monkey patch here.
-      ::Doorkeeper::Helpers::Filter.class_eval do
+      ::Doorkeeper::Rails::Helpers.class_eval do
         alias_method :original_doorkeeper_token, :doorkeeper_token
       end
 
       included do
-        include ::Doorkeeper::Helpers::Filter
+        before_action :doorkeeper_authorize!
         alias_method :doorkeeper_unauthorized_render_options, :unauthorized_render_options
-        doorkeeper_for :all
       end
 
       def verify_permission?
