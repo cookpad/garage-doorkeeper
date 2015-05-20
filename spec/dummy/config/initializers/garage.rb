@@ -1,5 +1,5 @@
 Garage.configure {}
-Garage.configuration.auth_filter = Garage::Doorkeeper::AuthFilter
+Garage.configuration.strategy = Garage::Doorkeeper::Strategy
 
 Garage::TokenScope.configure do
   register :public do

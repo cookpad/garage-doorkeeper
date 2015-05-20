@@ -1,7 +1,7 @@
 require "doorkeeper"
 
 require "garage/doorkeeper/version"
-require "garage/doorkeeper/auth_filter"
+require "garage/doorkeeper/strategy"
 
 module Garage
   module Doorkeeper
